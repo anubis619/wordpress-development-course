@@ -18,6 +18,9 @@
 	function function_name (){
 
 		add_theme_support('title-tag');
+		register_nav_menu('headerMenuLocation', 'Header Menu Location');
+		register_nav_menu('footerMenuLocation_01', 'Footer Menu Location One');
+		register_nav_menu('footerMenuLocation_02', 'Footer Menu Location Two');
 
 	}
 	add_action('after_setup_theme', 'function_name');
